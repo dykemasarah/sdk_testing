@@ -31,7 +31,6 @@ def main():
              | table timestamp user status src
              """
 
-
     service = connect(**opts.kwargs)
     socket.setdefaulttimeout(None)
     response = service.jobs.oneshot(search)

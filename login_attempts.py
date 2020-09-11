@@ -42,7 +42,7 @@ def main():
         socket.setdefaulttimeout(None)
         response = service.jobs.oneshot(search)
 
-    # Sending the output to definition to print to console
+        # Sending the output to definition to print to console
         get_data(response)
     except:
         print("Something went wrong while trying to connect. Do better.")
